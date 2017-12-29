@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <script src="https://use.fontawesome.com/bd6952c950.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Coda" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor/bootstrap.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Agenda</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand fixed-top navbar-toggleable-sm">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a href="index.html">
+        <img class="logonav navbar-brand" href="index.html" src="./images/logo.png" alt="logo">
+      </a>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="truck.html">Antonio's truck
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="agenda.html">Agenda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block d-sm-none" href="facebook.html">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block d-sm-none" href="twitter.html">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link d-block d-sm-none" href="instagram.html">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+      <div class="icons d-none d-sm-block">
+        <i class="fa fa-facebook" aria-hidden="true"></i>
+        <i class="fa fa-twitter" aria-hidden="true"></i>
+        <i class="fa fa-instagram" aria-hidden="true"></i>
+      </div>
+      <a class="btntexth" href="reserveer.html">
+        <button type="button" id="reserveBtn" class="btn d-none d-sm-block">
+          Reserveer
+        </button>
+      </a>
+    </nav>
+  </header>
+
+  <!-- header-->
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12 col-sm-12">
+        <div class="hero4 centered">
+
+          <p class="col-lg-3 col-sm-12">
+            <h4 id="txthero">Let's see when we can meet & eat!</h4>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero 2 -->
+
+    <div class=" col-md-4 col-sm-12 well pull-right-lg" style="border:0px solid">
+      <p class="well" style="padding:10px; margin-bottom:2px;">
+        <span class="glyphicon glyphicon-calendar"></span>
+      </p>
+      <div class="col-md-12" style="padding:0px;">
+        <br>
+
+
+      </div>
+    </div>
+
+    <!-- agenda -->
+
+    <!-- calender -->
+    <div>
+      <div id="calendar"></div>
+    </div>
+    <!-- calender -->
+
+    <div class="mail">
+      <div class="col-lg-6 offset-lg-3 col-sm-12 centered">
+        <div id="mail">
+          <h4>Ontvang maandelijks onze nieuwsbrief</h4>
+          <form id="form" class="topBefore">
+            <input id="email" type="text" placeholder="E-MAIL">
+          </form>
+          <div class="icons lettericon d-none d-sm-block">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer text-center">
+      <div class="container">
+        <span class="text-muted">FOOTER</span>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+<!-- vragen -->
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+  crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+  crossorigin="anonymous"></script>
+<script>
+  < script src = "./js/jquery.min.js" >
+</script>
+<script src="./js/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.7.0/fullcalendar.min.js"></script>
+
+<script>
+  $(document).ready(function () {
+
+    $('#calendar').fullCalendar({
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,basicWeek,basicDay'
+      },
+      defaultDate: '2017-11-12',
+      navLinks: true, // can click day/week names to navigate views
+      editable: true,
+      eventLimit: true, // allow "more" link when too many events
+      events: [{
+          title: 'gereserveerd',
+          start: '2017-11-01'
+        },
+        {
+          title: 'gereserveerd',
+          start: '2017-11-07',
+          end: '2017-11-10'
+        },
+
+        {
+          title: 'gereserveerd',
+          start: '2017-11-11',
+          end: '2017-11-13'
+        },
+
+        {
+          title: 'gereserveerd',
+          start: '2017-11-13T07:00:00'
+        },
+        {
+          title: 'gereserveerd',
+          start: '2017-11-28'
+        }
+      ]
+    });
+
+  });
+</script>
