@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster');
 @import url('https://fonts.googleapis.com/css?family=Lobster|Sofia');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 a:hover {
     text-decoration: none;
@@ -31,12 +32,12 @@ h3 {
 }
 
 p {
-    font-family: "avenir next", Arial;
+    font-family: "avenir next", "montserrat", Arial;
     font-size: 12pt;
 }
 
 body {
-    font-family: "avenir next", Arial;
+    font-family: "avenir next", "montserrat", Arial;
     background-color: #f7f5e0;
 }
 
