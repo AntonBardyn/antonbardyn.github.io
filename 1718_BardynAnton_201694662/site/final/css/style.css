@@ -31,12 +31,12 @@ h3 {
 }
 
 p {
-    font-family: "avenir next";
+    font-family: "avenir next", Arial;
     font-size: 12pt;
 }
 
 body {
-    font-family: "avenir next", "Arial";
+    font-family: "avenir next", Arial;
     background-color: #f7f5e0;
 }
 
